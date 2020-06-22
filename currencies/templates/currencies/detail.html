@@ -1,0 +1,9 @@
+<htlm>
+    <head></head>
+    <body> 
+    	<h1>{{ title }}</h1>
+        {% for value in history %}
+            <p>{{ value.exchangedate_from }} -- {{ value.buy }}/{{ value.sell }}</p>
+        {% endfor %}
+    </body>
+</htlm>

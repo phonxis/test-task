@@ -1,0 +1,8 @@
+<htlm>
+    <head></head>
+    <body> 
+        {% for currency in currencies %}
+            <p><a href="{% url 'detail' name=currency.name %}">{{ currency.name }}</a> -- {{ currency.buy }}/{{ currency.sell }} -- {{ currency.latest_date }}</p>
+        {% endfor %}
+    </body>
+</htlm>
